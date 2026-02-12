@@ -1,10 +1,5 @@
 # Hand-Gesture-for-Games
-Here is a clean, professional, and balanced `README.md` in Persian — not overly decorative, not minimal.
 
----
-
-```markdown
-# Hand Gesture Game Controller 🎮✋
 
 این پروژه یک کنترلر بازی مبتنی بر تشخیص حرکات دست است که با استفاده از **MediaPipe**، تصویر دوربین را پردازش کرده و حرکات دست را به ورودی کیبورد مجازی در لینوکس تبدیل می‌کند.
 
@@ -22,23 +17,6 @@ Here is a clean, professional, and balanced `README.md` in Persian — not overl
 - قابلیت توسعه آسان برای ژست‌های جدید
 
 ---
-
-## 🏗 ساختار پروژه
-
-```
-
-hand_controller/
-│
-├── main.py              # نقطه ورود برنامه
-├── camera.py            # مدیریت ورودی تصویر
-├── gesture_engine.py    # پردازش ژست‌ها با MediaPipe
-├── input_controller.py  # مدیریت کیبورد مجازی
-└── config.py            # تنظیمات مرکزی پروژه
-
-````
-
----
-
 ## 🖐 ژست‌های فعلی
 
 ### دست راست:
@@ -59,48 +37,6 @@ hand_controller/
 - OpenCV
 - MediaPipe
 - evdev (برای لینوکس)
-- دسترسی به uinput
-
-نصب وابستگی‌ها:
-
-```bash
-pip install opencv-python mediapipe evdev
-````
-
-فعال‌سازی uinput در لینوکس:
-
-```bash
-sudo modprobe uinput
-```
-
-در صورت نیاز، کاربر را به گروه input اضافه کنید:
-
-```bash
-sudo usermod -aG input $USER
-```
-
-سپس یک بار logout/login انجام دهید.
-
----
-
-## 🚀 اجرای پروژه
-
-ابتدا در فایل `config.py` آدرس دوربین را تنظیم کنید:
-
-```python
-CAMERA_URL = "http://YOUR_IP:PORT/video"
-```
-
-سپس اجرا کنید:
-
-```bash
-python main.py
-```
-
-برای خروج از برنامه، کلید `q` را فشار دهید.
-
----
-
 ## 🧠 نحوه کار
 
 1. دریافت فریم از دوربین
@@ -129,31 +65,3 @@ python main.py
 * این پروژه برای سیستم‌عامل لینوکس طراحی شده است.
 * برای اجرای صحیح، باید دسترسی به uinput داشته باشید.
 * عملکرد سیستم وابسته به کیفیت نور و دوربین است.
-
----
-
-## 📄 لایسنس
-
-این پروژه صرفاً برای اهداف آموزشی و تحقیقاتی توسعه داده شده است.
-در صورت استفاده در پروژه‌های دیگر، ذکر منبع توصیه می‌شود.
-
----
-
-## 👤 توسعه‌دهنده
-
-Erfan Sad
-
-```
-
----
-
-If you want, I can also:
-
-- Make a more technical version (developer-focused)
-- Make an English version for international audience
-- Add architecture diagram section
-- Add GIF demo section
-- Optimize it specifically for portfolio presentation
-
-Tell me the target audience of your GitHub (recruiter? hobby? open-source community?).
-```
